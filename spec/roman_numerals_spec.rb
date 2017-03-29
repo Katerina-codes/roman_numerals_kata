@@ -9,12 +9,17 @@ describe RomanNumerals do
 
   it "returns I if the arabic number is 1" do
     number_to_numeral = RomanNumerals.new
-    expect(number_to_numeral.convert_arabic_number(1)).to eq('I')
+    expect(number_to_numeral.convert_arabic_number(1)).to eq("I")
   end
 
   it "returns II if the arabic number is 2" do
     number_to_numeral = RomanNumerals.new
-    expect(number_to_numeral.convert_arabic_number(2)).to eq('II')
+    expect(number_to_numeral.convert_arabic_number(2)).to eq("II")
+  end
+
+  it "return III if the if the arabic number is 3" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(3)).to eq("III")
   end
 
 end
