@@ -7,10 +7,10 @@ describe RomanNumerals do
      expect(number_to_numeral.convert_arabic_number(0)).to eq("")
   end
 
-  # it "returns I if the arabic number is 1" do
-  #   number_to_numeral = RomanNumerals.new
-  #   expect(number_to_numeral.convert_arabic_number(1)).to eq("I")
-  # end
+  it "returns I if the arabic number is 1" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(1)).to eq("I")
+  end
   #
   # it "returns II if the arabic number is 2" do
   #   number_to_numeral = RomanNumerals.new

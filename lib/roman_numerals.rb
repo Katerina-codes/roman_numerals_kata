@@ -1,29 +1,30 @@
 class RomanNumerals
 
- # def get_roman_numeral(number)
- #   converted_number = convert_arabic_number(number)
- #   number_to_numeral(converted_number)
- # end
+  def convert_arabic_number(number)
 
- def convert_arabic_number(number)
-   number_list = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-   converted_number = ""
-
-     if number == 0
-       ""
-     else
-       number_list.each do |x|
-       until number == 0
-         if number >= x
-          converted_number.push(x)
-          number -= x
-          number
-         end
-       end
-       end
-     end
-     converted_number
+    if number == 0
+      ""
+    else
+      converted_number = get_roman_numeral(number)
+      number_to_numeral(converted_number)
+    end
   end
+
+  def get_roman_numeral(number)
+    number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    converted_number = [""]
+
+    number_list.each do |x|
+      until number == 0
+        if number >= x
+        converted_number.push(x)
+        number -= x
+        number
+        end
+      end
+    end
+    number = converted_number.join.to_i
+ end
 
   def number_to_numeral(converted_number)
     number_converter = {
@@ -37,8 +38,7 @@ class RomanNumerals
       8 => "VIII",
       9 => "IX"
     }
-    number_converter[number]
+    number_converter[converted_number]
   end
-
 
 end
