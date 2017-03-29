@@ -17,9 +17,14 @@ describe RomanNumerals do
     expect(number_to_numeral.convert_arabic_number(2)).to eq("II")
   end
 
-  it "return III if the if the arabic number is 3" do
+  it "returns III if the arabic number is 3" do
     number_to_numeral = RomanNumerals.new
     expect(number_to_numeral.convert_arabic_number(3)).to eq("III")
+  end
+
+  it "returns IV if the arabic number is 4" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(4)).to eq("IV")
   end
 
 end
