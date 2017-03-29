@@ -17,8 +17,10 @@ def convert_arabic_number(number)
     "VI"
   elsif number == 7
     "VII"
-  else
+  elsif number == 8
     "VIII"
+  else
+    "IX"
   end
 end
 
