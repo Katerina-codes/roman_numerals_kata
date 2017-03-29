@@ -37,4 +37,9 @@ describe RomanNumerals do
     expect(number_to_numeral.convert_arabic_number(6)).to eq("VI")
   end
 
+  it "returns VII if the arabic number is 7" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(7)).to eq("VII")
+  end
+
 end
