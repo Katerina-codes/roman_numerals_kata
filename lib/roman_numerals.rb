@@ -11,8 +11,10 @@ def convert_arabic_number(number)
     "III"
   elsif number == 4
     "IV"
-  else
+  elsif number == 5
     "V"
+  else
+    "VI"
   end
 end
 

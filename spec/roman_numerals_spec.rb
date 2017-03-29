@@ -32,4 +32,9 @@ describe RomanNumerals do
     expect(number_to_numeral.convert_arabic_number(5)).to eq("V")
   end
 
+  it "returns VI if the arabic number is 6" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(6)).to eq("VI")
+  end
+
 end
