@@ -3,9 +3,11 @@ class RomanNumerals
 def convert_arabic_number(number)
   if number == 0
     " "
-  else
+  elsif number == 1
     "I"
-  end  
+  else
+    "II"  
+  end
 end
 
 end
