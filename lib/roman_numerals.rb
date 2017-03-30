@@ -6,24 +6,28 @@ class RomanNumerals
       ""
     else
       converted_number = get_roman_numeral(number)
+      converted_number = converted_number.to_i
       number_to_numeral(converted_number)
     end
   end
 
   def get_roman_numeral(number)
     number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    converted_number = [""]
+    converted_number = []
 
     number_list.each do |x|
-      until number == 0
-        if number >= x
-        converted_number.push(x)
-        number -= x
-        number
+      until number == 0           # 2         | 1
+        if number >= x            # 1         |
+          converted_number.push(x)  # [1]
+          number -= x               # 2 - 1 = 1 |
+        else
+          number >= (x - 1)
+          converted_number.push(x)  # [1]
+        puts number -= x               # 2 - 1 = 1 |
         end
       end
     end
-    number = converted_number.join.to_i
+    converted_number.inject{ |sum,x| sum + x }
  end
 
   def number_to_numeral(converted_number)

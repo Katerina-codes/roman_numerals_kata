@@ -11,11 +11,11 @@ describe RomanNumerals do
     number_to_numeral = RomanNumerals.new
     expect(number_to_numeral.convert_arabic_number(1)).to eq("I")
   end
-  #
-  # it "returns II if the arabic number is 2" do
-  #   number_to_numeral = RomanNumerals.new
-  #   expect(number_to_numeral.convert_arabic_number(2)).to eq("II")
-  # end
+
+  it "returns II if the arabic number is 2" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(2)).to eq("II")
+  end
   #
   # it "returns III if the arabic number is 3" do
   #   number_to_numeral = RomanNumerals.new
