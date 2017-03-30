@@ -46,10 +46,15 @@ describe RomanNumerals do
     number_to_numeral = RomanNumerals.new
     expect(number_to_numeral.convert_arabic_number(8)).to eq("VIII")
   end
-  
+
   it "returns IX if the arabic number is 9" do
     number_to_numeral = RomanNumerals.new
     expect(number_to_numeral.convert_arabic_number(9)).to eq("IX")
+  end
+
+  it "returns X if the arabic number is 10" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(10)).to eq("X")
   end
 
 end
