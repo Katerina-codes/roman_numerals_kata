@@ -11,7 +11,7 @@ class RomanNumerals
   end
 
   def get_roman_numeral(number)
-    number_list = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+    number_list = [50, 40, 30, 20, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
     converted_number = []
 
     until number == 0
@@ -39,7 +39,11 @@ class RomanNumerals
       7 => "VII",
       8 => "VIII",
       9 => "IX",
-      10 => "X"
+      10 => "X",
+      20 => "XX",
+      30 => "XXX",
+      40 => "XL",
+      50 => "L"
     }
       arabic_to_numeral = number_converter[element]
       numerals.push(arabic_to_numeral)
