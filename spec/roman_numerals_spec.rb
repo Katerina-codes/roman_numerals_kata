@@ -16,40 +16,40 @@ describe RomanNumerals do
     number_to_numeral = RomanNumerals.new
     expect(number_to_numeral.convert_arabic_number(2)).to eq("II")
   end
-  #
-  # it "returns III if the arabic number is 3" do
-  #   number_to_numeral = RomanNumerals.new
-  #   expect(number_to_numeral.convert_arabic_number(3)).to eq("III")
-  # end
-  #
-  # it "returns IV if the arabic number is 4" do
-  #   number_to_numeral = RomanNumerals.new
-  #   expect(number_to_numeral.convert_arabic_number(4)).to eq("IV")
-  # end
-  #
-  # it "returns V if the arabic number is 5" do
-  #   number_to_numeral = RomanNumerals.new
-  #   expect(number_to_numeral.convert_arabic_number(5)).to eq("V")
-  # end
-  #
-  # it "returns VI if the arabic number is 6" do
-  #   number_to_numeral = RomanNumerals.new
-  #   expect(number_to_numeral.convert_arabic_number(6)).to eq("VI")
-  # end
-  #
-  # it "returns VII if the arabic number is 7" do
-  #   number_to_numeral = RomanNumerals.new
-  #   expect(number_to_numeral.convert_arabic_number(7)).to eq("VII")
-  # end
-  #
-  # it "returns VIII if the arabic number is 8" do
-  #   number_to_numeral = RomanNumerals.new
-  #   expect(number_to_numeral.convert_arabic_number(8)).to eq("VIII")
-  # end
-  #
-  # it "returns IX if the arabic number is 9" do
-  #   number_to_numeral = RomanNumerals.new
-  #   expect(number_to_numeral.convert_arabic_number(9)).to eq("IX")
-  # end
+
+  it "returns III if the arabic number is 3" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(3)).to eq("III")
+  end
+
+  it "returns IV if the arabic number is 4" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(4)).to eq("IV")
+  end
+
+  it "returns V if the arabic number is 5" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(5)).to eq("V")
+  end
+
+  it "returns VI if the arabic number is 6" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(6)).to eq("VI")
+  end
+
+  it "returns VII if the arabic number is 7" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(7)).to eq("VII")
+  end
+
+  it "returns VIII if the arabic number is 8" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(8)).to eq("VIII")
+  end
+  
+  it "returns IX if the arabic number is 9" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(9)).to eq("IX")
+  end
 
 end
