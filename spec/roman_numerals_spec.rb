@@ -67,4 +67,9 @@ describe RomanNumerals do
     expect(number_to_numeral.convert_arabic_number(43)).to eq("XLIII")
   end
 
+  it "returns C if the arabic number is 100" do
+    number_to_numeral = RomanNumerals.new
+    expect(number_to_numeral.convert_arabic_number(100)).to eq("C")
+  end
+
 end
