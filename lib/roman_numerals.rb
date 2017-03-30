@@ -6,31 +6,29 @@ class RomanNumerals
       ""
     else
       converted_number = get_roman_numeral(number)
-      converted_number = converted_number.to_i
       number_to_numeral(converted_number)
     end
   end
 
   def get_roman_numeral(number)
-    number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    number_list = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
     converted_number = []
 
-    number_list.each do |x|
-      until number == 0
-        if number >= x
-          converted_number.push(x)
-          number -= x
-        else
-          number >= (x - 1)
+    until number == 0
+      number_list.each do |x|
+        if number - x >= 0
           converted_number.push(x)
           number -= x
         end
       end
     end
-     converted_number.inject{ |sum,x| sum + x }
+    converted_number
  end
 
   def number_to_numeral(converted_number)
+    numerals = []
+
+    converted_number.each do |element|
     number_converter = {
       1 => "I",
       2 => "II",
@@ -41,9 +39,12 @@ class RomanNumerals
       7 => "VII",
       8 => "VIII",
       9 => "IX",
-      10 => "X" 
+      10 => "X"
     }
-    number_converter[converted_number]
+      arabic_to_numeral = number_converter[element]
+      numerals.push(arabic_to_numeral)
+   end
+    numerals.join
   end
 
 end
